@@ -9,8 +9,6 @@
     "build:netlify": "vite build --mode production.netlify",
     "deploy:github": "npm run build:github && gh-pages -d dist",
     "deploy:netlify": "npm run build:netlify",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
