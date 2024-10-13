@@ -4,9 +4,11 @@ import './index.css'
 import Game from './Game.tsx'
 import { BrowserRouter } from 'react-router-dom'
 
+const basePath = import.meta.env.BASE_URL || "/react-tic-tac-toe";
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter basename="/react-tic-tac-toe">
+    <BrowserRouter basename={basePath}>
       <Game />
     </BrowserRouter>
   </StrictMode>,
