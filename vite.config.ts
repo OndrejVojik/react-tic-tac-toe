@@ -12,6 +12,6 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [react()],
-	base: basePath,
+	base: '/react-tic-tac-toe',
   };
 });
