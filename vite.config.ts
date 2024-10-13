@@ -8,10 +8,9 @@ export default defineConfig(({ mode }) => {
 
   // Use the loaded environment variable to set the base path
   const basePath = env.VITE_BASE_PATH || '/';
-  console.log('basePath', basePath);
 
   return {
     plugins: [react()],
-	base: '/react-tic-tac-toe',
+	base: basePath,
   };
 });
